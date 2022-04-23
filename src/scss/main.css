@@ -17,7 +17,8 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   box-sizing: border-box;
@@ -52,7 +53,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 
 a {
   text-decoration: none;
@@ -108,6 +108,16 @@ body {
   }
 }
 
+.footer {
+  background-color: #FFF5F6;
+}
+
+.footer__link {
+  color: #D41443;
+}
+
+.footer__buttons {
+
 .section__name {
   font-family: 'Titan One';
   font-weight: 400;
@@ -140,6 +150,7 @@ body {
 .products__item {
   border-radius: 24px;
   position: relative;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,6 +158,88 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 330px;
+  margin-bottom: 48px;
+}
+
+.footer__btn__active {
+  width: 161.45px;
+  height: 44px;
+  border: none;
+  color: #fff;
+  border-radius: 22px;
+  margin-bottom: 10px;
+  background: #D41443;
+}
+
+.footer__btn {
+  width: 161px;
+  height: 44px;
+  border: none;
+  border-radius: 22px;
+  background: #FFFFFF;
+  color: #D41443;
+}
+
+.footer__text-block {
+  width: 232px;
+}
+
+.footer__text {
+  display: block;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFA5BA;
+}
+
+.footer__text--colored {
+  display: block;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: #D41443;
+}
+
+.footer__contact-block {
+  margin-bottom: 40px;
+}
+
+.footer__contact {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+  text-align: right;
+  color: #000000;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 40px;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.socials__link {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -393,12 +486,30 @@ body {
 }
 
 .btn-red {
+  
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #FEA5BB;
+}
+
+.socials__icon {
+  width: 19px;
+  height: 19px;
+  fill: #fff;
+}
+
+.footer__copyright {
+  border-top: 1px solid #E1E1E1;
   text-align: center;
   padding: 9px 30px;
   border-radius: 25px;
@@ -426,12 +537,45 @@ body {
 }
 
 .btn-white {
+  
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #FFF5F6;
+  padding: 8px 0;
+}
+
+.footer__copyright-text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  color: #907E82;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__text--colored {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #D41443;
+  }
+  .footer__copyright {
+    padding: 16px 20px 20px;
+  }
+  .footer__copyright-text {
+    text-align: center;
+  }
+  .footer__copyright-text span {
+    display: inline-block;
   text-align: center;
   padding: 9px 30px;
   border-radius: 25px;
@@ -456,7 +600,7 @@ body {
   border-left: 3px solid #D41443;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
-=======
+  
 .header {
   position: relative;
   padding-top: 8px;
@@ -690,6 +834,29 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+  .footer__text {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFA5BA;
+  }
+  .footer__text--colored {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #D41443;
+  }
+}
+
   .header {
     padding: 32px 32px 0;
     height: 416px;
@@ -938,4 +1105,5 @@ body {
     right: 32px;
   }
 }
+
 /*# sourceMappingURL=main.css.map */
