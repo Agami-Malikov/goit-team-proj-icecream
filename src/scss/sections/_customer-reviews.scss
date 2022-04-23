@@ -1,134 +1,145 @@
 .cust-reviews {
-
   &__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-&__group {
-  width: 100%;
-}
+  &__group {
+    margin-bottom: 80px;
+  }
 
-&__avatar {
-  margin: 80px 0 32px 0;
-  width: 85px;
-  height: 85px;
+  &__slider-item {
+    text-align: center;
+    list-style: none;
+  }
 
-}
+  &__note {
+    background-color: #fafafa;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 16px;
+  }
 
-&__note {
-  background-color: #FAFAFA;
-  z-index: 1;
-  position: relative;
-  width: calc(100vw - 40px);
-  padding: 60px 50px 18px 50px;
-}
-
-&__note-bg {
-  background-image: repeating-linear-gradient(to bottom,
+  &__note-bg {
+    background-image: repeating-linear-gradient(
+      to bottom,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0), 29px,
-      #E1E1E1 30px,
-      #E1E1E1 31px);
-  padding: 0px 20px 8px 20px;
-  z-index: -2;
-}
-
-&__text {
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 31px;
-  text-align: center;
-  z-index: 1;
-}
-
-&__text::before {
-  content: url(../images/cust-reviews/cust.svg);
-  position: absolute;
-  left: 30px;
-  top: 44px;
-  z-index: -1;
-}
-
-&__red-dots {
-  display: flex;
-  justify-content: space-between;
-  width: 32px;
-  margin: 4px 0 16px 0;
-}
-
-&__red-dot {
-  background-color: #C7133E;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-}
-
-&__author {
-  font-weight: 500;
-  font-size: 14px;
-}
-
-&__dots-house {
-  margin-top: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 72px;
-}
-
-&__svg-house {
-  width: 12px;
-  height: 12px;
-  display: inline-block;
-}
-
-&__gray-dots {
-  background-color: #D9D9D9;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
-}
-@media screen and (min-width: 768px) {
-  .cust-reviews {
-  
-  &__note {
-    width: calc(100vw - 148px);
-    padding: 60px 50px 18px 50px;
+      rgba(0, 0, 0, 0),
+      29px,
+      #e1e1e1 30px,
+      #e1e1e1 31px
+    );
+    padding: 0px 20px 8px 20px;
+    z-index: -2;
   }
 
-  &__avatar {
-    margin: 80px 0 20px 0;
-  }
-
-  &__note {
-    padding: 36px 6px;
+  &__text {
+    font-size: 12px;
+    line-height: 31px;
+    text-align: center;
+    z-index: 1;
+    letter-spacing: 0.04em;
   }
 
   &__text::before {
-    left: 2px;
-    top: 17px;
+    content: url(../images/cust-reviews/cust.svg);
+    position: absolute;
+    z-index: -1;
   }
 
-  &__dots-house {
-    margin-top: 32px;
+  &__red-dots {
+    display: flex;
+    justify-content: space-between;
+    width: 32px;
+    margin: 4px auto 20px;
+  }
+
+  .red-dot {
+    background: #c7133e;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+  }
+
+  &__author {
+    font-weight: 500;
+    font-size: 14px;
   }
 }
+
+@media screen and (max-width: 768px) {
+
+  .cust-reviews {
+
+    &__avatar {
+      margin-bottom: 32px;
+    }
+
+    &__text {
+      font-size: 12px;
+    } 
+
+    &__text::before {
+      left: 45px;
+      top: 40px;
+    }
+
+    &__note {
+      max-width: 280px;
+      padding: 50px 50px 25px;
+    }
+  }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+  .cust-reviews {
+
+    &__avatar {
+      margin-bottom: 20px;
+    }
+
+    &__note {
+      max-width: 620px;
+      padding: 37px 30px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+
+    &__text::before {
+      left: 15px;
+      top: 17px;
+    }
+  }
+}
+
 @media screen and (min-width: 1200px) {
-  .cust-reviews {
-  
-  &__note {
-    width: calc(100vw - 246px);
-    padding: 31px 107px 31px 107px;
-  }
 
-  &__text::before {
-    left: 87px;
+  .cust-reviews {
+
+    &__group {
+      margin-bottom: 120px;
+    }
+
+    &__avatar {
+      margin-bottom: 16px;
+    }
+
+    &__note {
+      max-width: 1100px;
+      padding: 31px 107px 31px 107px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__text::before {
+      left: 87px;
+      top: 17px;
+    }
   }
-}
 }
