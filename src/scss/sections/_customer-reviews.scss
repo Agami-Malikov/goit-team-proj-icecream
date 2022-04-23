@@ -1,144 +1,134 @@
 .cust-reviews {
 
   &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  &__group {
-    width: 100%;
-  }
+&__group {
+  width: 100%;
+}
 
-  &__avatar {
-    margin: 80px 0 32px 0;
-    width: 85px;
-    height: 85px;
-  }
+&__avatar {
+  margin: 80px 0 32px 0;
+  width: 85px;
+  height: 85px;
 
+}
+
+&__note {
+  background-color: #FAFAFA;
+  z-index: 1;
+  position: relative;
+  width: calc(100vw - 40px);
+  padding: 60px 50px 18px 50px;
+}
+
+&__note-bg {
+  background-image: repeating-linear-gradient(to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0), 29px,
+      #E1E1E1 30px,
+      #E1E1E1 31px);
+  padding: 0px 20px 8px 20px;
+  z-index: -2;
+}
+
+&__text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 31px;
+  text-align: center;
+  z-index: 1;
+}
+
+&__text::before {
+  content: url(../images/cust-reviews/cust.svg);
+  position: absolute;
+  left: 30px;
+  top: 44px;
+  z-index: -1;
+}
+
+&__red-dots {
+  display: flex;
+  justify-content: space-between;
+  width: 32px;
+  margin: 4px 0 16px 0;
+}
+
+&__red-dot {
+  background-color: #C7133E;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+
+&__author {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+&__dots-house {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 72px;
+}
+
+&__svg-house {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+}
+
+&__gray-dots {
+  background-color: #D9D9D9;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+}
+@media screen and (min-width: 768px) {
+  .cust-reviews {
+  
   &__note {
-    background-color: #FAFAFA;
-    z-index: 1;
-    position: relative;
-    width: calc(100vw - 40px);
+    width: calc(100vw - 148px);
     padding: 60px 50px 18px 50px;
   }
 
-  &__note-bg {
-    background-image: repeating-linear-gradient(to bottom,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0), 29px,
-    #E1E1E1 30px,
-    #E1E1E1 31px);
-    padding: 0px 20px 8px 20px;
-    z-index: -2;
+  &__avatar {
+    margin: 80px 0 20px 0;
   }
 
-  &__text {
-    position: relative;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 31px;
-    text-align: center;
-    z-index: 1;
+  &__note {
+    padding: 36px 6px;
   }
 
-  &__text::after {
-    position: absolute;
-    content: url(../images/cust-reviews/cust.svg);
-    top: 44px;
-    left: 30px;
-    width: 50px;
-    height: 50px;
-    z-index: -1;
-  }
-
-  &__red-dots {
-    display: flex;
-    justify-content: space-between;
-    width: 32px;
-    margin: 4px 0 16px 0;
-  }
-
-  &__red-dot {
-    background-color: #C7133E;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-  }
-
-  &__author {
-    font-weight: 500;
-    font-size: 14px;
+  &__text::before {
+    left: 2px;
+    top: 17px;
   }
 
   &__dots-house {
-    margin-top: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 72px;
+    margin-top: 32px;
   }
-
-  &__svg-house {
-    width: 12px;
-    height: 12px;
-    display: inline-block;
-  } 
-
-  &__gray-dots {
-    background-color: #D9D9D9;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-  }
-
 }
-
-  
-@media screen and (min-width: 768px) {
-
-  .cust-reviews {
-
-  }
-
-    .cust-reviews__note {
-        width: calc(100vw - 148px);
-        padding: 60px 50px 18px 50px;
-    
-    &__avatar {
-        margin: 80px 0 20px 0;
-    }
-
-    &__note {
-        padding: 36px 6px;
-    }
-
-    &__text::before {
-        left: 2px;
-        top: 17px;
-    }
-
-    &__dots-house {
-        margin-top: 32px;
-    }
-    }
 }
-
 @media screen and (min-width: 1200px) {
-
   .cust-reviews {
-    
+  
+  &__note {
+    width: calc(100vw - 246px);
+    padding: 31px 107px 31px 107px;
   }
 
-    .cust-reviews__note {
-        width: calc(100vw - 246px);
-        padding: 31px 107px 31px 107px;
-    
-    &__text::before {
-        left: 87px;
-    }
-    }
+  &__text::before {
+    left: 87px;
+  }
+}
 }
