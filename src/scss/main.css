@@ -97,134 +97,243 @@ body {
 }
 
 .header {
-  position: relative;
-  padding-top: 8px;
-  height: 502px;
+  padding-top: 37px;
   background-color: #FFB8CA;
-  overflow: hidden;
 }
 
 .header > .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.header__button-burger {
-  width: 44px;
-  height: 44px;
-  border: none;
-  background-color: transparent;
+.header__list {
+  display: flex;
 }
 
-.header__icon {
-  width: 20px;
-  height: 20px;
+.header__item:not(:first-child) {
+  margin-left: 35px;
 }
 
-.header__button-buy {
+.header__nav {
   position: relative;
-  margin-left: 16px;
-  width: 160px;
-  height: 44px;
+  z-index: 2;
+}
+
+.header__link {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: #FFFFFF;
+}
+
+.header__link:hover, .header__link:focus {
+  color: #D41443;
+}
+
+.header__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 22px;
   border: none;
-  background: #ffffff;
+}
+
+.header__button--buy {
+  align-items: center;
+  width: 159px;
+  height: 44px;
+  background: #FFFFFF;
   font-family: 'DM Sans';
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #D41443;
 }
 
-.header__button-buy::after {
+.header__button--buy::after {
   content: '>';
-  position: absolute;
-  top: 13px;
-  right: 25px;
+  margin-left: 10px;
+}
+
+.hero {
+  padding: 60px 0;
 }
 
 .hero > .container {
-  z-index: 3;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__passion-milk {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__list {
+  display: flex;
+  margin-top: 24px;
 }
 
 .hero__title {
-  margin-top: 110px;
-  max-width: 218px;
-}
-
-.hero__title {
-  margin-bottom: 20px;
+  max-width: 277px;
   font-family: 'Titan One';
-  font-size: 26px;
+  font-size: 38px;
   line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #FFFFFF;
 }
 
-.hero__title-span {
-  font-size: 48px;
+.hero__title-decorate {
+  font-size: 60px;
   color: #D41443;
-}
-
-.hero__buttons {
-  display: flex;
 }
 
 .hero__button {
-  font-family: 'DM Sans';
-  border-radius: 20px;
-  font-size: 8px;
-  line-height: 10px;
   display: flex;
-  align-items: center;
-  text-align: center;
   justify-content: center;
+  align-items: center;
+  border-radius: 20px;
   border: none;
 }
 
-.hero__button:not(:last-child) {
-  margin-right: 8px;
+.hero__button--cherry {
+  width: 107px;
+  height: 40px;
+  color: #FFFFFF;
+  background-color: #D41443;
 }
 
-.hero__button--prod {
-  width: 61px;
-  height: 24px;
-  background-color: #D41443;
+.hero__button--white {
+  width: 138px;
+  height: 40px;
+  color: #D41443;
+  background-color: #FFFFFF;
+}
+
+.hero__milk {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.hero__milk-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__text {
+  position: relative;
+  z-index: 2;
+  max-width: 200px;
+  font-family: 'DM Sans';
+  font-size: 14px;
+  line-height: 140%;
   color: #FFFFFF;
 }
 
-.hero__button--made {
-  width: 82px;
-  height: 24px;
-  color: #D41443;
+.hero__btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: none;
+  background-image: url(../images/header/desktop/button.png);
+  background-position: center;
+  background-size: cover;
 }
 
-.hero__picture {
+.hero__ice-cream {
+  position: relative;
+  width: 335px;
+}
+
+.hero__ice-cream::after {
   position: absolute;
-  bottom: 0;
-  right: 15%;
+  content: '';
+  top: -97px;
+  left: -145px;
+  width: 580px;
+  height: 580px;
+  border-radius: 50%;
+  background-color: #FFA5BA;
 }
 
 .hero__img {
-  position: relative;
-  vertical-align: bottom;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
   z-index: 2;
 }
 
-.hero__circle {
-  z-index: 0;
+.hero__data {
+  display: flex;
+  width: 90px;
+}
+
+.hero__data-item {
+  position: relative;
+  z-index: 10;
+}
+
+.hero__data-item:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.hero__data-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__data-span {
+  font-family: 'Titan One';
+  font-size: 46px;
+  line-height: 1.15;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+
+.hero__data-item--first::after {
   position: absolute;
-  top: -10px;
-  left: -80px;
-  width: 346px;
-  height: 344px;
+  top: -7px;
+  right: -12px;
+  z-index: -1;
+  content: '';
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  background-color: #FFA5BA;
+  background-color: #FFFFFF;
+}
+
+.hero__data-item--second::after {
+  position: absolute;
+  top: -7px;
+  right: -12px;
+  z-index: -1;
+  content: '';
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
+.hero__data-text {
+  font-family: 'DM Sans';
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.hero__girl {
+  position: absolute;
+  right: 0;
+  bottom: -60px;
 }
 
 .menu {
@@ -307,274 +416,9 @@ body {
   color: #D41443;
 }
 
-@media screen and (max-width: 767px) {
-  .header__button-buy {
-    display: none;
-  }
-  .hero__img-milk {
-    display: none;
-  }
-  .hero__text {
-    display: none;
-  }
-  .hero__btn-img {
-    display: none;
-  }
-  .hero__img-girl {
-    display: none;
-  }
-  .hero__data-list {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header {
-    padding: 32px 32px 0;
-    height: 416px;
-  }
-  .header__buttons {
-    display: flex;
-  }
-  .hero__title {
-    margin-top: 20px;
-  }
-  .hero__title-span {
-    font-size: 41px;
-  }
-  .hero__img {
-    width: 143px;
-    height: 336px;
-  }
-  .hero__circle {
-    top: -47px;
-    width: 335px;
-    height: 333px;
-  }
-  .hero__picture {
-    right: 40%;
-  }
-  .hero__img-milk {
-    position: relative;
-    left: 0;
-    bottom: 0;
-  }
-  .hero__span-button {
-    width: 18px;
-    height: 18px;
-    background-color: white;
-  }
-  .hero__text {
-    position: absolute;
-    bottom: 72px;
-    left: 165px;
-    max-width: 114px;
-    font-family: 'DM Sans';
-    font-size: 8px;
-    line-height: 150%;
-    color: #FFFFFF;
-  }
-  .hero__btn-img {
-    position: absolute;
-    bottom: 45px;
-    width: 18px;
-    height: 18px;
-    border: none;
-    border-radius: 50%;
-    background-image: url(../images/header/tablet/button.png);
-  }
-  .hero__img-girl {
-    position: absolute;
-    right: 0;
-    bottom: 6px;
-  }
-  .hero__data {
-    position: absolute;
-    top: 0;
-    right: 0%;
-    width: 100px;
-    height: 100px;
-  }
-  .hero__data-list {
-    position: absolute;
-    right: 58px;
-  }
-  .hero__data-item--first {
-    position: absolute;
-  }
-  .hero__data-item--second {
-    position: absolute;
-    top: 58px;
-    right: -33px;
-  }
-  .hero__data-item--first::after {
-    position: absolute;
-    top: -3px;
-    left: 27px;
-    z-index: -1;
-    content: '';
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #ffffff;
-  }
-  .hero__data-item--second::after {
-    position: absolute;
-    top: 0;
-    left: 30px;
-    z-index: -1;
-    content: '';
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #ffffff;
-  }
-  .hero__data-text {
-    font-family: 'Titan One';
-    font-size: 28px;
-    line-height: 1.14;
-    text-align: right;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #D41443;
-  }
-  .hero__data-subtext {
-    font-family: 'DM Sans';
-    font-size: 8px;
-    line-height: 1.25;
-    text-align: right;
-    color: #FFFFFF;
-  }
-  .menu {
-    padding: 20px 32px;
-  }
-  .menu__button-close {
-    top: 20px;
-    right: 32px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
-  .header__buttons {
-    display: flex;
-  }
-  .header__button-buy {
-    margin-left: 16px;
-    width: 160px;
-    height: 44px;
-    border-radius: 22px;
-    border: none;
-    background: #ffffff;
-    font-family: 'DM Sans';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #D41443;
-  }
-  .header .hero__title {
-    margin-top: 20px;
-  }
-  .header .hero__title-span {
-    font-size: 41px;
-  }
-  .header .hero__img {
-    width: 143px;
-    height: 336px;
-  }
-  .header .hero__circle {
-    top: -47px;
-    width: 335px;
-    height: 333px;
-  }
-  .header .hero__picture {
-    right: 40%;
-  }
-  .header .hero__img-milk {
-    position: relative;
-    left: 0;
-    bottom: 0;
-  }
-  .header .hero__text {
-    position: absolute;
-    bottom: 72px;
-    left: 165px;
-    max-width: 114px;
-    font-family: 'DM Sans';
-    font-size: 8px;
-    line-height: 150%;
-    color: #FFFFFF;
-  }
-  .header .hero__img-girl {
-    position: absolute;
-    right: 0;
-    bottom: 6px;
-  }
-  .header .hero__data {
-    position: absolute;
-    top: 0;
-    right: 0%;
-    width: 100px;
-    height: 100px;
-  }
-  .header .hero__data-list {
-    position: absolute;
-    right: 58px;
-  }
-  .header .hero__data-item--first {
-    position: absolute;
-  }
-  .header .hero__data-item--second {
-    position: absolute;
-    top: 58px;
-    right: -33px;
-  }
-  .header .hero__data-item--first::after {
-    position: absolute;
-    top: -3px;
-    left: 27px;
-    z-index: -1;
-    content: '';
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #ffffff;
-  }
-  .header .hero__data-item--second::after {
-    position: absolute;
-    top: 0;
-    left: 30px;
-    z-index: -1;
-    content: '';
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #ffffff;
-  }
-  .header .hero__data-text {
-    font-family: 'Titan One';
-    font-size: 28px;
-    line-height: 1.14;
-    text-align: right;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #D41443;
-  }
-  .header .hero__data-subtext {
-    font-family: 'DM Sans';
-    font-size: 8px;
-    line-height: 1.25;
-    text-align: right;
-    color: #FFFFFF;
-  }
-  .header .menu {
-    padding: 20px 32px;
-  }
-  .header .menu__button-close {
-    top: 20px;
-    right: 32px;
+  .menu {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
