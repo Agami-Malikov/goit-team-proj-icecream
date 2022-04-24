@@ -283,7 +283,7 @@
   .cow__block {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   .about__img-cow {
@@ -291,9 +291,7 @@
   }
 
   .slogan {
-    position: relative;
-
-    width: calc(40% - 20px);
+    width: calc(40% - 0px);
     margin-top: 40px;
 
     &__title {
@@ -306,29 +304,36 @@
       line-height: 194%;
       letter-spacing: 0.04em;
     }
+  }
+
+  .wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  .about__btn--block {
+    position: relative;
+
+    margin-top: 40px;
 
     &::after {
       position: absolute;
       content: url(./../images/about/milk-desct.png);
-      top: -85px;
-      right: -110px;
+      bottom: -100px;
+      right: -100px;
     }
-  }
-
-  .about__btn--block {
-    margin-top: 40px;
   }
 
   .about {
-    margin-top: 120px;
+    padding: 120px 0px;
 
     &__list {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
     }
 
     &__item {
-      width: calc(30% - 20px);
+      width: calc(25% - 20px);
     }
 
     &__icon {
