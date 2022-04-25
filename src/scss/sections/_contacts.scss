@@ -1,5 +1,4 @@
 .contacts {
-  
   background: linear-gradient(0deg, #fff5f6, rgba(0, 0, 0, 0) 75%);
 
   &__item {
@@ -70,13 +69,11 @@
 
   &__buttons {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
   }
 }
 
 @media screen and (max-width: 767px) {
-
   .contacts {
     position: relative;
     padding: 48px 0;
@@ -123,17 +120,26 @@
     &__schedule-item {
       margin-bottom: 8px;
     }
+
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
-  .arrow-red::after,
-  .arrow::after {
-    top: 6px;
+  .btn-red--size {
+    margin-bottom: 10px;
+  }
+
+  .btn-red--size,
+  .btn-white--size {
+    width: 162px;
+    padding: 10px 0;
   }
 }
 
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-
   .contacts {
     padding: 80px 0 40px;
 
@@ -152,11 +158,20 @@
     &__contact-item {
       margin-bottom: 8px;
     }
+
+    &__button:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  .btn-red--size,
+  .btn-white--size {
+    padding: 9px 0;
+    width: 191px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-
   .contacts {
     padding: 120px 0;
 
@@ -169,5 +184,14 @@
     &__item {
       max-width: 395px;
     }
+
+    &__button:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  .btn-red--size,
+  .btn-white--size {
+    width: 198px;
   }
 }
