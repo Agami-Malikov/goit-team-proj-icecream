@@ -7,6 +7,10 @@
   max-width: 180px;
   color: $accent-color;
   background-color: $main-white-color;
+
+  &:hover {
+    background-color: #ecebeb;
+  }
 }
 
 //Стрелка должна быть спаном внутри ссылки

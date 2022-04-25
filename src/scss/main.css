@@ -19,9 +19,12 @@ time, mark, audio, video {
   vertical-align: baseline;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+<<<<<<< HEAD
+=======
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   box-sizing: border-box;
+>>>>>>> e7b6cf586974e258afdaa98c99aa0996f69163e7
   text-decoration: inherit;
 }
 
@@ -54,11 +57,14 @@ table {
   border-spacing: 0;
 }
 
+<<<<<<< HEAD
+=======
 a {
   text-decoration: none;
   color: inherit;
 }
 
+>>>>>>> e7b6cf586974e258afdaa98c99aa0996f69163e7
 body {
   background-color: #FFFFFF;
   font-family: 'DM Sans', 'sans-serif';
@@ -68,6 +74,8 @@ body {
   color: #000000;
 }
 
+<<<<<<< HEAD
+=======
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -84,6 +92,7 @@ body {
   overflow: hidden;
 }
 
+>>>>>>> e7b6cf586974e258afdaa98c99aa0996f69163e7
 .container {
   padding: 0 15px;
   max-width: 1310px;
@@ -108,6 +117,40 @@ body {
   }
 }
 
+<<<<<<< HEAD
+.about-bg {
+  background-color: #fff5f6;
+}
+
+@media screen and (min-width: 480px) {
+  .caption {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 40px;
+  }
+  __title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFA5BA;
+  }
+}
+=======
 .footer {
   background-color: #FFF5F6;
 }
@@ -1106,4 +1149,5 @@ body {
   }
 }
 
+>>>>>>> e7b6cf586974e258afdaa98c99aa0996f69163e7
 /*# sourceMappingURL=main.css.map */
