@@ -16,7 +16,17 @@
       </ul>
     </nav>
 
-    <button class="header__button header__button--buy" type="button">Buy now</button>
+    <div class="header__buttons">
+
+      <button class="header__button-burger" data-menu-open>
+        <svg class="header__icon">
+          <use href="./images/header/mobile/burger/burger-close-sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
+
+      <button class="header__button header__button--buy" type="button">Buy now</button>
+
+    </div>
 
   </div>
 
@@ -50,7 +60,15 @@
 
         <div class="hero__milk">
 
-          <img class="hero__img-milk"
+          <!-- hero__milk-tablet -->
+
+          <img class="hero__img-milk hero__img-milk--tablet"
+            srcset="./images/header/tablet/milk.png 1x, ./images/header/tablet/milk-2x.png 2x"
+            src="./images/header/tablet/milk.png" alt="milk">
+
+          <!-- hero__milk-desktop -->
+
+          <img class="hero__img-milk hero__img-milk--desktop"
             srcset="./images/header/desktop/milk.png 1x, ./images/header/desktop/milk-2x.png 2x"
             src="./images/header/desktop/milk.png" alt="milk">
 
@@ -59,6 +77,7 @@
             <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et</p>
             <button class="hero__btn" type="button"></button>
+
 
           </div>
 
@@ -70,13 +89,27 @@
 
       <div class="hero__ice-cream">
 
-        <img class="hero__img"
+        <!-- hero__ice-cream mobile -->
+
+        <img class="hero__img hero__img--mobile"
+          srcset="./images/header/mobile/ice-cream.png 1x, ./images/header/mobile/ice-cream-2x.png 2x"
+          src="./images/header/mobile/ice-cream.png" alt="ice-cream">
+
+        <!-- hero__ice-cream tablet -->
+
+        <img class="hero__img hero__img--tablet"
+          srcset="./images/header/tablet/ice-cream.png 1x, ./images/header/tablet/ice-cream-2x.png 2x"
+          src="./images/header/tablet/ice-cream.png" alt="ice-cream">
+
+        <!-- hero__ice-cream desktop -->
+
+        <img class="hero__img hero__img--desktop"
           srcset="./images/header/desktop/ice-cream.png 1x, ./images/header/desktop/ice-cream-2x.png 2x"
-          src="./images/header/desktop/ice-cream.png" alt="ice-cream" width="236">
+          src="./images/header/desktop/ice-cream.png" alt="ice-cream">
 
       </div>
 
-      <!-- hero data -->
+      <!-- hero__data -->
 
       <div class="hero__data">
 
@@ -90,10 +123,15 @@
         </ul>
       </div>
 
-      <!-- hero girl -->
+      <!-- hero__girl tablet -->
 
-      <img class="hero__girl" srcset="./images/header/desktop/girl.png 1x, ./images/header/desktop/girl.png 2x"
-        src="./images/header/desktop/girl-2x.png" alt="girl is eating an ice-cream" width="304" height="241">
+      <img class="hero__girl hero__girl--tablet" srcset="./images/header/tablet/girl.png 1x, ./images/header/tablet/girl-2x.png 2x"
+        src="./images/header/tablet/girl.png" alt="girl is eating an ice-cream">
+
+      <!-- hero__girl desktop -->
+
+      <img class="hero__girl hero__girl--desktop" srcset="./images/header/desktop/girl.png 1x, ./images/header/desktop/girl-2x.png 2x"
+        src="./images/header/desktop/girl.png" alt="girl is eating an ice-cream">
 
     </div>
 
@@ -126,7 +164,7 @@
           <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
 
         </ul>
-        
+
       </nav>
 
     </div>
