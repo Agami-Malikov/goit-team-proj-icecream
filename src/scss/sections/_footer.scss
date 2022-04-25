@@ -60,15 +60,6 @@
   }
 }
 
-.btn-red--size {
-  padding: 9px 30px 9px 17px;
-  margin-bottom: 10px;
-}
-
-.btn-white--size {
-  padding: 9px 50px 9px 30px;
-}
-
 .socials {
   display: flex;
   justify-content: flex-end;
@@ -116,7 +107,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  
   .footer {
     &__text-block {
       max-width: 340px;
@@ -144,21 +134,10 @@
       color: $accent-color;
     }
 
-    &__buttons {
-      display: flex;
-      justify-content: center;
-      align-items: baseline;
-      margin-bottom: 40px;
-    }
-
     &__block {
       display: flex;
       justify-content: space-between;
       margin-bottom: 40px;
-    }
-
-    .btn-red--size {
-      margin-right: 15px;
     }
   }
 }
@@ -202,10 +181,6 @@
 
     &__contact-block {
       align-self: flex-end;
-    }
-
-    .btn-red--size {
-      margin-right: 15px;
     }
   }
 }
