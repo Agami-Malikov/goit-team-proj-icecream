@@ -1,5 +1,4 @@
 .contacts {
-
   &__item {
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
@@ -9,6 +8,12 @@
   &__foodtruck {
     text-transform: uppercase;
     color: $main-white-color;
+  }
+
+  &__cafe,
+  &__foodtruck {
+    padding: 2px 20px;
+    margin-bottom: 32px;
   }
 
   &__cafe {
@@ -41,11 +46,51 @@
       padding: 2px 25px;
     
     }
+
+    &__schedule-item {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+  .contacts {
+    padding: 80px 0 40px;
+
+    &__list {
+      margin: 0 auto 40px;
+      display: flex;
+      justify-content: space-between;
+      max-width: 800px;
+    }
+
+    &__item {
+      max-width: 230px;
+    }
+
+    &__schedule-item,
+    &__contact-item {
+      margin-bottom: 8px;
+    }
   }
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {}
+@media screen and (min-width: 1200px) {
 
-@media screen and (min-width: 1200px) {}
+  .contacts {
+    padding: 120px 0;
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
+    }
+
+    &__item {
+      max-width: 395px;
+    }
+  }
+}
 
