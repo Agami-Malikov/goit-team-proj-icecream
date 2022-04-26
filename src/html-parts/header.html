@@ -21,10 +21,11 @@
         </svg>
       </button>
 
-      <a href="#" class="btn-white header__btn--buy"
-        >Buy now
+      <button type="button" class="btn-white menu__btn--buy" data-modal-open>
+        Buy now
         <span class="arrow"></span>
-      </a>
+      </button>
+      
     </div>
   </div>
 
@@ -232,6 +233,55 @@
     </div>
   </div>
 
+  <!-- modal wndw -->
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <div class="modal__close" data-modal-close></div>
+      <p class="modal__header">Make an order</p>
+      <form action="" class="modal__form">
+  
+        <label class="label" for="name">
+          <p class="modal__description">Name</p>
+          <div class="modal__input-svg"><input class="modal__small-input" type="text" id="name">
+            <svg class="modal__input-svg-icon">
+              <use href="../src/images/header/modal/cola.svg#icon-pacman"></use>
+            </svg>
+          </div>
+        </label>
+  
+        <label class="label" for="phone">
+          <p class="modal__description">Phone</p>
+          <div class="modal__input-svg">
+            <input class="modal__small-input" type="text" id="phone">
+            <svg class="modal__input-svg-icon">
+              <use href="../src/images/header/modal/cola.svg#icon-mobile"></use>
+            </svg>
+          </div>
+        </label>
+        <div class="modal__pics">
+          <div class="modal__item"><img src="../src/images/header/modal/ic1.png" height="100" alt=""><input class="modal__amount" type="number"
+              name="" id="" min="0" max="10"></div>
+          <div class="modal__item"><img src="../src/images/header/modal/ic2.png" height="100" alt=""><input class="modal__amount" type="number"
+              name="" id="" min="0" max="10"></div>
+          <div class="modal__item"><img src="../src/images/header/modal/ic3.png" height="100" alt=""><input class="modal__amount" type="number"
+              name="" id="" min="0" max="10"></div>
+        </div>
+  
+        <label class="modal__label_checkbox" for="input-confirm">
+          <input class="modal__input-checkbox" id="input-confirm" type="checkbox">
+  
+          <span class="modal__span">
+            <svg class="modal__confirm-svg">
+              <use href="../src/images/header/modal/cola.svg#icon-confirm"></use>
+            </svg></span>
+          <p class="modal__confirm">I confirm <a class="modal__confirm-link" href="">terms and conditions</a></p>
+        </label>
+        <button type="submit" class="submit">Place my order!</button>
+      </form>
+    </div>
+  </div>
+
   <!-- tablet / mobile menu -->
 
   <div class="menu" data-menu>
@@ -242,10 +292,10 @@
         </svg>
       </button>
 
-      <a href="#" class="btn-white menu__btn--buy"
-        >Buy now
+      <button type="button" class="btn-white menu__btn--buy" data-modal-open>
+        Buy now
         <span class="arrow"></span>
-      </a>
+      </button>
 
       <nav class="menu__nav">
         <ul class="menu__list">
@@ -258,4 +308,5 @@
       </nav>
     </div>
   </div>
+  <script src="../src/js/modal.js"></script>
 </header>
