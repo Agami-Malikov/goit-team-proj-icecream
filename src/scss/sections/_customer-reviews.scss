@@ -7,9 +7,8 @@
     margin-bottom: 80px;
   }
 
-  &__slider-item {
-    text-align: center;
-    list-style: none;
+  &__avatar {
+    margin: 0 auto;
   }
 
   &__note {
@@ -63,20 +62,52 @@
   &__author {
     font-weight: 500;
     font-size: 14px;
+    margin-bottom: 32px;
   }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slick-dots > li:not(.slick-active) {
+    width: 12px;
+    height: 12px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+  }
+
+  .slick-dots > li > button {
+    border: none;
+    font-size: 0;
+    padding: 0;
+  }
+
+  .slick-dots > li:not(:last-child) {
+    margin-right: 18px;
+  }
+
+  .slick-active {
+    width: 12px;
+    height: 10px;
+    background: url(../images/cust-reviews/home.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
 }
 
 @media screen and (max-width: 768px) {
-
   .cust-reviews {
-
     &__avatar {
       margin-bottom: 32px;
     }
 
     &__text {
       font-size: 12px;
-    } 
+    }
 
     &__text::before {
       left: 45px;
@@ -91,9 +122,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-
   .cust-reviews {
-
     &__avatar {
       margin-bottom: 20px;
     }
@@ -115,9 +144,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-
   .cust-reviews {
-
     &__group {
       margin-bottom: 120px;
     }
