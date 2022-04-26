@@ -38,10 +38,7 @@
   &__indent {
     margin-top: 20px;
   }
-}
 
-.about-btn {
-  width: 176px;
 }
 
 // mobile
@@ -279,6 +276,7 @@
     z-index: 1;
   }
 
+
   .about__btn {
     position: relative;
 
@@ -327,6 +325,26 @@
       color: $main-black-color;
       font-size: 16px;
       line-height: 176%;
+    }
+  }
+}
+
+.about__btn--block {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 1281px) {
+  .about__btn--block {
+    position: relative;
+
+    margin-top: 40px;
+
+    &::after {
+      position: absolute;
+      content: url(./../images/about/milk-desct.png);
+      background-size: 300px;
+      bottom: -100px;
+      right: -100px;
     }
   }
 }
