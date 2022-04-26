@@ -18,6 +18,7 @@
 
   &__item {
     position: relative;
+    border-radius: 24px;
 
     &--pink {
       background-color: $products-pink-color;
@@ -79,114 +80,120 @@
     font-weight: 700;
   }
 
-@media screen and (max-width: 768px) {
-  .products {
-    padding: 80px 0 40px;
+  &__btn {
+    margin: 0 auto;
+  }
+  
 
-    &__title {
-      font-size: 34px;
-      margin-bottom: 150px;
-    }
+  @media screen and (max-width: 768px) {
+    .products {
+      padding: 80px 0 40px;
 
-    &__item {
-      padding: 160px 40px 40px;
-      max-width: 280px;
-      margin: 0 auto;
-
-      &:not(:last-child) {
+      &__title {
+        font-size: 34px;
         margin-bottom: 150px;
       }
+
+      &__item {
+        padding: 160px 40px 40px;
+        max-width: 280px;
+        margin: 0 auto;
+
+        &:not(:last-child) {
+          margin-bottom: 150px;
+        }
+      }
     }
   }
-}
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .products {
-    padding: 40px 0 60px;
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    .products {
+      padding: 40px 0 60px;
 
-    &__list {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    &__item {
-      padding: 120px 32px 40px;
-      max-width: 224px;
-
-      &--pink::before,
-      &--sand::before,
-      &--green::before {
-        top: -40%;
-        right: -30px;
+      &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 900px;
+        margin: 0 auto;
       }
-    }
 
-    &__title {
-      font-size: 48px;
-      margin-bottom: 190px;
-    }
+      &__item {
+        padding: 120px 32px 40px;
+        max-width: 224px;
 
-    &__title-part {
-      font-size: 26px;
-    }
+        &--pink::before,
+        &--sand::before,
+        &--green::before {
+          top: -40%;
+          right: -30px;
+        }
+      }
 
-    &__text {
-      margin-bottom: 42px;
+      &__title {
+        font-size: 48px;
+        margin-bottom: 190px;
+      }
+
+      &__title-part {
+        font-size: 26px;
+      }
+
+      &__text {
+        margin-bottom: 42px;
+      }
     }
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .products {
-    padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    .products {
+      padding: 60px 0;
 
-    &__title {
-      font-size: 58px;
-      margin-bottom: 230px;
-    }
-
-    &__title-part {
-      font-size: 26px;
-    }
-
-    &__list {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    &__subtitle {
-      font-size: 30px;
-    }
-
-    &__text {
-      font-size: 16px;
-      margin-bottom: 60px;
-    }
-
-    &__item {
-      padding: 265px 32px 40px;
-      max-width: 395px;
-
-      &--pink::before,
-      &--sand::before,
-      &--green::before {
-        top: -40%;
+      &__title {
+        font-size: 58px;
+        margin-bottom: 230px;
       }
 
-      &--pink::before {
-        content: url(../images/products/ice-cream1@desktop.webp);
+      &__title-part {
+        font-size: 26px;
       }
 
-      &--sand::before {
-        content: url(../images/products/ice-cofee2@desktop.webp);
+      &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
 
-      &--green::before {
-        content: url(../images/products/milkshake3@desktop.webp);
+      &__subtitle {
+        font-size: 30px;
+      }
+
+      &__text {
+        font-size: 16px;
+        margin-bottom: 60px;
+      }
+
+      &__item {
+        padding: 265px 32px 40px;
+        max-width: 395px;
+
+        &--pink::before,
+        &--sand::before,
+        &--green::before {
+          top: -40%;
+        }
+
+        &--pink::before {
+          content: url(../images/products/ice-cream1@desktop.webp);
+        }
+
+        &--sand::before {
+          content: url(../images/products/ice-cofee2@desktop.webp);
+        }
+
+        &--green::before {
+          content: url(../images/products/milkshake3@desktop.webp);
+        }
       }
     }
   }
