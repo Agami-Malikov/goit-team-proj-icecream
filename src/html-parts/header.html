@@ -53,40 +53,46 @@
         <!-- hero__milk -->
 
         <div class="hero__milk">
-          <!-- hero__milk-tablet -->
-
           <picture>
             <source
-              srcset="./images/header/tablet/milk.webp 1x, ./images/header/tablet/milk-2x.webp 2x"
+              srcset="
+                ./images/header/tablet/milk-tablet.webp    1x,
+                ./images/header/tablet/milk-tablet-2x.webp 2x
+              "
               type="image/webp"
+              media="(min-width: 769px) and (max-width: 1199px)"
             />
+
             <source
-              srcset="./images/header/tablet/milk.png 1x, ./images/header/tablet/milk-2x.png 2x"
-              type="image/png"
-            />
-
-            <img
-              class="hero__img-milk hero__img-milk--tablet"
-              src="./images/header/tablet/milk.png"
-              alt="milk"
-            />
-          </picture>
-
-          <!-- hero__milk-desktop -->
-
-          <picture>
-            <source
-              srcset="./images/header/desktop/milk.webp 1x, ./images/header/desktop/milk-2x.webp 2x"
+              srcset="
+                ./images/header/desktop/milk-desctop.webp    1x,
+                ./images/header/desktop/milk-desctop-2x.webp 2x
+              "
               type="image/webp"
+              media="(min-width: 1200px)"
             />
+
             <source
-              srcset="./images/header/desktop/milk.png 1x, ./images/header/desktop/milk-2x.png 2x"
+              srcset="
+                ./images/header/tablet/milk-tablet.png    1x,
+                ./images/header/tablet/milk-tablet-2x.png 2x
+              "
               type="image/png"
+              media="(min-width: 769px) and (max-width: 1199px)"
+            />
+
+            <source
+              srcset="
+                ./images/header/desktop/milk-desctop.png    1x,
+                ./images/header/desktop/milk-desctop-2x.png 2x
+              "
+              type="image/png"
+              media="(min-width: 1200px)"
             />
 
             <img
               class="hero__img-milk hero__img-milk--desktop"
-              src="./images/header/desktop/milk.png"
+              src="./images/header/desktop/milk-desctop.png"
               alt="milk"
             />
           </picture>
@@ -104,77 +110,64 @@
       <!-- hero ice-cream -->
 
       <div class="hero__ice-cream">
-        <!-- hero__ice-cream mobile -->
-
         <picture>
           <source
             srcset="
-              ./images/header/mobile/ice-cream.webp    1x,
-              ./images/header/mobile/ice-cream-2x.webp 2x
+              ./images/header/mobile/ice-cream-mobile.webp    1x,
+              ./images/header/mobile/ice-cream-mobile-2x.webp 2x
             "
             type="image/webp"
+            media="(max-width: 768px)"
           />
+
           <source
             srcset="
-              ./images/header/mobile/ice-cream.png    1x,
-              ./images/header/mobile/ice-cream-2x.png 2x
+              ./images/header/tablet/ice-cream-tablet.webp    1x,
+              ./images/header/tablet/ice-cream-tablet-2x.webp 2x
+            "
+            type="image/webp"
+            media="(min-width: 769px) and (max-width: 1199px)"
+          />
+
+          <source
+            srcset="
+              ./images/header/desktop/ice-cream-desktop.webp    1x,
+              ./images/header/desktop/ice-cream-desktop-2x.webp 2x
+            "
+            type="image/webp"
+            media="(min-width: 1200px)"
+          />
+
+          <source
+            srcset="
+              ./images/header/mobile/ice-cream-mobile.png    1x,
+              ./images/header/mobile/ice-cream-mobile-2x.png 2x
             "
             type="image/png"
+            media="(max-width: 768px)"
+          />
+
+          <source
+            srcset="
+              ./images/header/tablet/ice-cream-tablet.png    1x,
+              ./images/header/tablet/ice-cream-tablet-2x.png 2x
+            "
+            type="image/png"
+            media="(min-width: 769px) and (max-width: 1199px)"
+          />
+
+          <source
+            srcset="
+              ./images/header/desktop/ice-cream-desktop.png    1x,
+              ./images/header/desktop/ice-cream-desktop-2x.png 2x
+            "
+            type="image/png"
+            media="(min-width: 1200px)"
           />
 
           <img
             class="hero__img hero__img--mobile"
-            src="./images/header/mobile/ice-cream.png"
-            alt="ice-cream"
-          />
-        </picture>
-
-        <!-- hero__ice-cream tablet -->
-
-        <picture>
-          <source
-            srcset="
-              ./images/header/tablet/ice-cream.webp    1x,
-              ./images/header/tablet/ice-cream-2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            srcset="
-              ./images/header/tablet/ice-cream.png    1x,
-              ./images/header/tablet/ice-cream-2x.png 2x
-            "
-            type="image/png"
-          />
-
-          <img
-            class="hero__img hero__img--tablet"
-            src="./images/header/tablet/ice-cream.png"
-            alt="ice-cream"
-          />
-        </picture>
-
-        <!-- hero__ice-cream desktop -->
-
-        <picture>
-          <source
-            srcset="
-              ./images/header/desktop/ice-cream.webp    1x,
-              ./images/header/desktop/ice-cream-2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            srcset="
-              ./images/header/desktop/ice-cream.png    1x,
-              ./images/header/desktop/ice-cream-2x.png 2x
-            "
-            type="image/png"
-          />
-
-          <img
-            class="hero__img hero__img--desktop"
-            src="./images/header/desktop/ice-cream.png"
+            src="./images/header/desktop/ice-cream-desktop.png"
             alt="ice-cream"
           />
         </picture>
@@ -193,46 +186,50 @@
         </ul>
       </div>
 
-      <!-- hero__girl tablet -->
-
       <picture>
         <source
-          srcset="./images/header/tablet/girl.webp 1x, ./images/header/tablet/girl-2x.webp 2x"
+          srcset="
+            ./images/header/tablet/girl-tablet.webp   1x,
+            ./images/header/tablet/girl-tablet-2x.png 2x
+          "
           type="image/webp"
+          media="(min-width: 769px) and (max-width: 1199px)"
         />
+
         <source
-          srcset="./images/header/tablet/girl.png 1x, ./images/header/tablet/girl-2x.png 2x"
-          type="image/png"
-        />
-
-        <img
-          class="hero__girl hero__girl--tablet"
-          src="./images/header/tablet/girl.png"
-          alt="girl is eating an ice-cream"
-        />
-      </picture>
-
-      <!-- hero__girl desktop -->
-
-      <picture>
-        <source
-          srcset="./images/header/desktop/girl.webp 1x, ./images/header/desktop/girl-2x.webp 2x"
+          srcset="
+            ./images/header/desktop/girl-desctop.webp    1x,
+            ./images/header/desktop/girl-desctop-2x.webp 2x
+          "
           type="image/webp"
+          media="(min-width: 1200px)"
         />
+
         <source
-          srcset="./images/header/desktop/girl.png 1x, ./images/header/desktop/girl-2x.png 2x"
+          srcset="
+            ./images/header/tablet/girl-tablet.png    1x,
+            ./images/header/tablet/girl-tablet-2x.png 2x
+          "
           type="image/png"
+          media="(min-width: 769px) and (max-width: 1199px)"
+        />
+
+        <source
+          srcset="
+            ./images/header/desktop/girl-desctop.png    1x,
+            ./images/header/desktop/girl-desctop-2x.png 2x
+          "
+          type="image/png"
+          media="(min-width: 1200px)"
         />
 
         <img
           class="hero__girl hero__girl--desktop"
-          src="./images/header/desktop/girl.png"
-          alt="girl is eating an ice-cream"
+          src="./images/header/desktop/girl-desctop.png"
+          alt="girl"
         />
       </picture>
     </div>
-  </div>
-
   </div>
 
   <!-- tablet / mobile menu -->

@@ -17,7 +17,6 @@
     margin-left: 35px;
   }
 
-
   &__nav {
     position: relative;
     z-index: 2;
@@ -490,17 +489,9 @@
       color: #d41443;
     }
 
-    &__img-milk--desktop {
-      display: none;
-    }
-
     &__img {
       bottom: -16px;
       left: 0;
-    }
-
-    &__img--mobile {
-      display: none;
     }
 
     &__img--desktop {
@@ -513,10 +504,6 @@
 
       width: 355px;
       height: 355px;
-    }
-
-    &__girl--desktop {
-      display: none;
     }
   }
 
@@ -596,10 +583,6 @@
 
       font-size: 14px;
       line-height: 140%;
-    }
-
-    &__img--mobile {
-      display: none;
     }
 
     &__img--tablet {
