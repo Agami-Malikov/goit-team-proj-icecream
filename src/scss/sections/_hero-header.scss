@@ -1,10 +1,9 @@
-
 .header {
   padding-top: 37px;
 
-  background-color: #FFB8CA;
+  background-color: #ffb8ca;
 
-  &>.container {
+  & > .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,8 +17,6 @@
     margin-left: 35px;
   }
 
-  // header nav
-
   &__nav {
     position: relative;
     z-index: 2;
@@ -32,7 +29,7 @@
     font-size: 16px;
     line-height: 1.31;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   &__link:hover,
@@ -53,51 +50,12 @@
     width: 20px;
     height: 20px;
   }
-
-  // header button base
-
-  &__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 22px;
-
-    border: none;
-    cursor: pointer;
-  }
-
-  // header button differents
-
-  &__button--buy {
-    align-items: center;
-    width: 159px;
-    height: 44px;
-
-    background: #FFFFFF;
-
-    font-family: 'DM Sans';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-
-    color: $accent-color;
-  }
-
-  &__button--buy::after {
-    content: '>';
-    margin-left: 12px;
-
-  }
 }
 
-// hero
-
 .hero {
-
   padding: 60px 0;
 
-  &>.container {
+  & > .container {
     position: relative;
 
     display: flex;
@@ -128,7 +86,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   &__title-decorate {
@@ -136,8 +94,6 @@
 
     color: $accent-color;
   }
-
-  // hero button
 
   &__button {
     display: flex;
@@ -152,25 +108,11 @@
     font-size: 8px;
     line-height: 1.25;
     cursor: pointer;
+
+    &:hover {
+      background-color: #ecebeb;
+    }
   }
-
-  // hero button differents
-
-  &__button--cherry {
-    width: 61px;
-
-    color: #FFFFFF;
-    background-color: $accent-color;
-  }
-
-  &__button--white {
-    width: 83px;
-
-    color: $accent-color;
-    background-color: #FFFFFF;
-  }
-
-  // hero milk
 
   &__milk {
     display: flex;
@@ -184,8 +126,6 @@
     flex-direction: column;
   }
 
-  // hero milk styles
-
   &__text {
     position: relative;
     z-index: 2;
@@ -196,7 +136,7 @@
     font-size: 8px;
     line-height: 150%;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   &__btn {
@@ -211,10 +151,10 @@
     cursor: pointer;
 
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background: url(../images/header/desktop/button-2x.png) center/cover no-repeat;
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url(../images/header/desktop/button-2x.png) center/cover no-repeat;
     }
   }
 
@@ -222,8 +162,6 @@
     width: 26px;
     height: 26px;
   }
-
-  // hero ice-cream
 
   &__ice-cream {
     position: relative;
@@ -251,8 +189,6 @@
     z-index: 2;
   }
 
-  // hero data
-
   &__data {
     display: flex;
 
@@ -272,8 +208,6 @@
     display: flex;
     flex-direction: column;
   }
-
-  // hero data styles
 
   &__data-span {
     font-family: 'Titan One';
@@ -299,7 +233,7 @@
     height: 16px;
     border-radius: 50%;
 
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 
   &__data-item--second::after {
@@ -314,7 +248,7 @@
     height: 16px;
     border-radius: 50%;
 
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 
   &__data-text {
@@ -323,14 +257,11 @@
     line-height: 1.25;
     text-align: right;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 
-// hero girl
-
 .hero {
-
   &__girl {
     position: absolute;
 
@@ -338,8 +269,6 @@
     bottom: -16px;
   }
 }
-
-// menu
 
 .menu {
   position: fixed;
@@ -350,7 +279,7 @@
   width: 100%;
   height: 100%;
 
-  background-color: #E17992;
+  background-color: #e17992;
   transform: translateX(100%);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -363,7 +292,7 @@
     height: 20px;
   }
 
-  &>.container {
+  & > .container {
     padding: 60px 20px 0;
   }
 
@@ -380,40 +309,16 @@
     cursor: pointer;
   }
 
-  &__button {
-    margin: 0 auto;
-    margin-bottom: 20px;
-
-    width: 209px;
-    height: 44px;
-
-    background: #FFFFFF;
-    border-radius: 22px;
-    border: none;
-
-    font-family: 'DM Sans';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
+  .menu__btn--buy {
     display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-
-    color: $accent-color;
-    cursor: pointer;
-  }
-
-  &__button::after {
-    margin-left: 15px;
-
-    content: '>';
+    width: 210px;
+    margin-bottom: 32px;
   }
 
   &__item {
     padding: 10px;
 
-    border: 1px solid #E18298;
+    border: 1px solid #e18298;
     border-right: none;
     border-left: none;
   }
@@ -424,7 +329,7 @@
     font-size: 14px;
     line-height: 1.28;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   &__link:hover,
@@ -434,11 +339,7 @@
 }
 
 @media screen and (max-width: 767px) {
-
-  // header mobile
-
   .header {
-
     padding: 8px 20px 0;
 
     overflow: hidden;
@@ -447,40 +348,68 @@
       display: none;
     }
 
-    // header__button--buy mobile
-
-    &__button--buy {
-      display: none;
+    &__btn--made {
+      display: block;
+      width: 83px;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 10px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #d41443;
     }
   }
 
-  // hero mobile
+  .btn-white {
+    display: none;
+  }
 
   .hero {
-
     padding: 136px 0 158px;
-
-    // hero__passion mobile
 
     &__passion {
       position: relative;
       z-index: 3;
     }
 
-    // hero__ice-cream mobile
+    &__btn--product {
+      width: 63px;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 10px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    &__btn--made {
+      display: block;
+      width: 83px;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 10px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #d41443;
+    }
 
     &__ice-cream::after {
       width: 346px;
       height: 344px;
     }
 
-    // hero__milk mobile
-
     &__milk {
       display: none;
     }
-
-    // hero__img mobile
 
     &__img--tablet {
       display: none;
@@ -490,27 +419,18 @@
       display: none;
     }
 
-    // hero__data mobile
-
     &__data {
       display: none;
     }
-
-    // hero__girl mobile
 
     &__girl {
       display: none;
     }
   }
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-
-  // header tablet
-
   .header {
-
     padding: 32px 32px 0;
 
     &__nav {
@@ -519,20 +439,16 @@
 
     &__buttons {
       display: flex;
+      align-items: center;
     }
 
-    &__button--buy {
-      margin-left: 32px;
-
+    &__btn--buy {
+      margin-left: 20px;
       width: 160px;
-      height: 44px;
     }
   }
 
-  // hero tablet
-
   .hero {
-
     padding: 18px 0px 16px;
 
     &__title {
@@ -546,13 +462,36 @@
       font-size: 35px;
     }
 
-    // hero__milk tablet
+    &__btn--product {
+      width: 63px;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 10px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    &__btn--made {
+      display: block;
+      width: 83px;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 10px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #d41443;
+    }
 
     &__img-milk--desktop {
       display: none;
     }
-
-    // hero__ice-crem tablet
 
     &__img {
       bottom: -16px;
@@ -575,18 +514,12 @@
       height: 355px;
     }
 
-    // hero__girl tablet
-
     &__girl--desktop {
       display: none;
     }
-
   }
 
-  // menu tablet
-
   .menu {
-
     &__button {
       width: 186px;
       height: 44px;
@@ -595,22 +528,17 @@
 }
 
 @media screen and (min-width: 1200px) {
-
-  // header desktop
-
   .header {
-
-    // burger desktop
-
     &__button-burger {
       display: none;
     }
+
+    &__btn--buy {
+      width: 159px;
+    }
   }
 
-  // hero desktop
-
   .hero {
-
     &__title {
       max-width: 277px;
 
@@ -621,33 +549,42 @@
       font-size: 60px;
     }
 
+    &__btn--product {
+      width: 107px;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    &__btn--made {
+      display: block;
+      width: 138px;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: #d41443;
+    }
     &__item:not(:last-child) {
       margin-right: 12px;
     }
-
-    &__button {
-      height: 40px;
-
-      font-size: 14px;
-      line-height: 1.28;
-    }
-
-    &__button--cherry {
-      width: 107px;
-    }
-
-    &__button--white {
-      width: 138px;
-    }
-
-    // hero__img desktop
 
     &__img {
       bottom: -60px;
       left: 0;
     }
-
-    // hero__milk desktop
 
     &__img-milk--tablet {
       display: none;
@@ -660,8 +597,6 @@
       line-height: 140%;
     }
 
-    // hero__ice-crem desktop
-
     &__img--mobile {
       display: none;
     }
@@ -669,8 +604,6 @@
     &__img--tablet {
       display: none;
     }
-
-    // hero__data desktop
 
     &__data {
       width: 90px;
@@ -702,8 +635,6 @@
       line-height: 1.28;
     }
 
-    // hero__girl desktop
-
     &__girl {
       bottom: -60px;
     }
@@ -711,13 +642,9 @@
     &__girl--tablet {
       display: none;
     }
-
   }
-
-  // menu desktop
 
   .menu {
     display: none;
   }
 }
-
