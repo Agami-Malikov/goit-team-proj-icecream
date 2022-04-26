@@ -77,6 +77,10 @@
     height: 32px;
     border-radius: 50%;
     background: #fea5bb;
+
+    &:hover {
+      background: $accent-color;
+    }
   }
 
   &__icon {

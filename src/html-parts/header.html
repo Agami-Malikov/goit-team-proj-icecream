@@ -1,116 +1,181 @@
 <header class="header">
-
   <div class="container">
-
-    <a href="index.html" class="logo"><img src="./images/header/logo/logo.svg" alt="logo"></a>
+    <a href="index.html" class="logo"><img src="./images/header/logo/logo.svg" alt="logo" /></a>
 
     <nav class="header__nav">
-      <ul class="header__list">
+      <ul class="header__list" id="menu">
         <li class="header__item"><a class="header__link" href="#">Home</a></li>
-        <li class="header__item"><a class="header__link" href="#">About us</a></li>
-        <li class="header__item"><a class="header__link" href="#">How it’s made?</a></li>
-        <li class="header__item"><a class="header__link" href="#">Our products</a></li>
-        <li class="header__item"><a class="header__link" href="#">Contact</a></li>
+        <li class="header__item"><a class="header__link" href="#about">About us</a></li>
+        <li class="header__item">
+          <a class="header__link" href="#how-made">How it’s made?</a>
+        </li>
+        <li class="header__item"><a class="header__link" href="#products">Our products</a></li>
+        <li class="header__item"><a class="header__link" href="#contact">Contact</a></li>
       </ul>
     </nav>
 
     <div class="header__buttons">
-
       <button class="header__button-burger" data-menu-open>
         <svg class="header__icon">
           <use href="./images/header/mobile/burger/burger-close-sprite.svg#icon-burger"></use>
         </svg>
       </button>
 
-      <button class="header__button header__button--buy" type="button">Buy now</button>
-
+      <a href="#" class="btn-white header__btn--buy"
+        >Buy now
+        <span class="arrow"></span>
+      </a>
     </div>
-
   </div>
 
   <!-- hero -->
 
   <div class="hero">
-
     <div class="container">
-
       <div class="hero__passion-milk">
-
         <!-- hero__passion -->
 
         <div class="hero__passion">
-
-          <h1 class="hero__title">ice cream
-            made with
+          <h1 class="hero__title">
+            ice cream made with
             <span class="hero__title-decorate">passion</span>
           </h1>
           <ul class="hero__list">
-            <li class="hero__item"><button class="hero__button hero__button--cherry" type="button">Products</button>
+            <li class="hero__item">
+              <a href="#" class="btn-red hero__btn--product">Products </a>
             </li>
-            <li class="hero__item"><button class="hero__button hero__button--white" type="button">How it’s
-                made?</button>
+            <li class="hero__item">
+              <a href="#" class="btn-white hero__btn--made">How it’s made? </a>
             </li>
           </ul>
-
         </div>
 
         <!-- hero__milk -->
 
         <div class="hero__milk">
+          <picture>
+            <source
+              srcset="
+                ./images/header/tablet/milk-tablet.webp    1x,
+                ./images/header/tablet/milk-tablet-2x.webp 2x
+              "
+              type="image/webp"
+              media="(min-width: 769px) and (max-width: 1199px)"
+            />
 
-          <!-- hero__milk-tablet -->
+            <source
+              srcset="
+                ./images/header/desktop/milk-desctop.webp    1x,
+                ./images/header/desktop/milk-desctop-2x.webp 2x
+              "
+              type="image/webp"
+              media="(min-width: 1200px)"
+            />
 
-          <img class="hero__img-milk hero__img-milk--tablet"
-            srcset="./images/header/tablet/milk.png 1x, ./images/header/tablet/milk-2x.png 2x"
-            src="./images/header/tablet/milk.png" alt="milk">
+            <source
+              srcset="
+                ./images/header/tablet/milk-tablet.png    1x,
+                ./images/header/tablet/milk-tablet-2x.png 2x
+              "
+              type="image/png"
+              media="(min-width: 769px) and (max-width: 1199px)"
+            />
 
-          <!-- hero__milk-desktop -->
+            <source
+              srcset="
+                ./images/header/desktop/milk-desctop.png    1x,
+                ./images/header/desktop/milk-desctop-2x.png 2x
+              "
+              type="image/png"
+              media="(min-width: 1200px)"
+            />
 
-          <img class="hero__img-milk hero__img-milk--desktop"
-            srcset="./images/header/desktop/milk.png 1x, ./images/header/desktop/milk-2x.png 2x"
-            src="./images/header/desktop/milk.png" alt="milk">
+            <img
+              class="hero__img-milk hero__img-milk--desktop"
+              src="./images/header/desktop/milk-desctop.png"
+              alt="milk"
+            />
+          </picture>
 
           <div class="hero__milk-inner">
-
-            <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et</p>
+            <p class="hero__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et
+            </p>
             <button class="hero__btn" type="button"></button>
-
-
           </div>
-
         </div>
-
       </div>
 
       <!-- hero ice-cream -->
 
       <div class="hero__ice-cream">
+        <picture>
+          <source
+            srcset="
+              ./images/header/mobile/ice-cream-mobile.webp    1x,
+              ./images/header/mobile/ice-cream-mobile-2x.webp 2x
+            "
+            type="image/webp"
+            media="(max-width: 768px)"
+          />
 
-        <!-- hero__ice-cream mobile -->
+          <source
+            srcset="
+              ./images/header/tablet/ice-cream-tablet.webp    1x,
+              ./images/header/tablet/ice-cream-tablet-2x.webp 2x
+            "
+            type="image/webp"
+            media="(min-width: 769px) and (max-width: 1199px)"
+          />
 
-        <img class="hero__img hero__img--mobile"
-          srcset="./images/header/mobile/ice-cream.png 1x, ./images/header/mobile/ice-cream-2x.png 2x"
-          src="./images/header/mobile/ice-cream.png" alt="ice-cream">
+          <source
+            srcset="
+              ./images/header/desktop/ice-cream-desktop.webp    1x,
+              ./images/header/desktop/ice-cream-desktop-2x.webp 2x
+            "
+            type="image/webp"
+            media="(min-width: 1200px)"
+          />
 
-        <!-- hero__ice-cream tablet -->
+          <source
+            srcset="
+              ./images/header/mobile/ice-cream-mobile.png    1x,
+              ./images/header/mobile/ice-cream-mobile-2x.png 2x
+            "
+            type="image/png"
+            media="(max-width: 768px)"
+          />
 
-        <img class="hero__img hero__img--tablet"
-          srcset="./images/header/tablet/ice-cream.png 1x, ./images/header/tablet/ice-cream-2x.png 2x"
-          src="./images/header/tablet/ice-cream.png" alt="ice-cream">
+          <source
+            srcset="
+              ./images/header/tablet/ice-cream-tablet.png    1x,
+              ./images/header/tablet/ice-cream-tablet-2x.png 2x
+            "
+            type="image/png"
+            media="(min-width: 769px) and (max-width: 1199px)"
+          />
 
-        <!-- hero__ice-cream desktop -->
+          <source
+            srcset="
+              ./images/header/desktop/ice-cream-desktop.png    1x,
+              ./images/header/desktop/ice-cream-desktop-2x.png 2x
+            "
+            type="image/png"
+            media="(min-width: 1200px)"
+          />
 
-        <img class="hero__img hero__img--desktop"
-          srcset="./images/header/desktop/ice-cream.png 1x, ./images/header/desktop/ice-cream-2x.png 2x"
-          src="./images/header/desktop/ice-cream.png" alt="ice-cream">
-
+          <img
+            class="hero__img hero__img--mobile"
+            src="./images/header/desktop/ice-cream-desktop.png"
+            alt="ice-cream"
+          />
+        </picture>
       </div>
 
       <!-- hero__data -->
 
       <div class="hero__data">
-
         <ul class="hero__data-list">
           <li class="hero__data-item hero__data-item--first">
             <p class="hero__data-text"><span class="hero__data-span">16</span>cafes</p>
@@ -121,52 +186,76 @@
         </ul>
       </div>
 
-      <!-- hero__girl tablet -->
+      <picture>
+        <source
+          srcset="
+            ./images/header/tablet/girl-tablet.webp   1x,
+            ./images/header/tablet/girl-tablet-2x.png 2x
+          "
+          type="image/webp"
+          media="(min-width: 769px) and (max-width: 1199px)"
+        />
 
-      <img class="hero__girl hero__girl--tablet" srcset="./images/header/tablet/girl.png 1x, ./images/header/tablet/girl-2x.png 2x"
-        src="./images/header/tablet/girl.png" alt="girl is eating an ice-cream">
+        <source
+          srcset="
+            ./images/header/desktop/girl-desctop.webp    1x,
+            ./images/header/desktop/girl-desctop-2x.webp 2x
+          "
+          type="image/webp"
+          media="(min-width: 1200px)"
+        />
 
-      <!-- hero__girl desktop -->
+        <source
+          srcset="
+            ./images/header/tablet/girl-tablet.png    1x,
+            ./images/header/tablet/girl-tablet-2x.png 2x
+          "
+          type="image/png"
+          media="(min-width: 769px) and (max-width: 1199px)"
+        />
 
-      <img class="hero__girl hero__girl--desktop" srcset="./images/header/desktop/girl.png 1x, ./images/header/desktop/girl-2x.png 2x"
-        src="./images/header/desktop/girl.png" alt="girl is eating an ice-cream">
+        <source
+          srcset="
+            ./images/header/desktop/girl-desctop.png    1x,
+            ./images/header/desktop/girl-desctop-2x.png 2x
+          "
+          type="image/png"
+          media="(min-width: 1200px)"
+        />
 
+        <img
+          class="hero__girl hero__girl--desktop"
+          src="./images/header/desktop/girl-desctop.png"
+          alt="girl"
+        />
+      </picture>
     </div>
-
-  </div>
-
   </div>
 
   <!-- tablet / mobile menu -->
 
   <div class="menu" data-menu>
-
     <div class="container">
-
       <button class="menu__button-close" type="button">
         <svg class="menu__icon" data-menu-close>
           <use href="./images/header/mobile/burger/burger-close-sprite.svg#icon-close"></use>
         </svg>
       </button>
 
-      <button class="menu__button" type="button">Buy now</button>
+      <a href="#" class="btn-white menu__btn--buy"
+        >Buy now
+        <span class="arrow"></span>
+      </a>
 
       <nav class="menu__nav">
-
         <ul class="menu__list">
-
           <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
           <li class="menu__item"><a href="#" class="menu__link">About us</a></li>
           <li class="menu__item"><a href="#" class="menu__link">How it’s made?</a></li>
           <li class="menu__item"><a href="#" class="menu__link">Our products</a></li>
           <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
-
         </ul>
-
       </nav>
-
     </div>
-
   </div>
-
 </header>
