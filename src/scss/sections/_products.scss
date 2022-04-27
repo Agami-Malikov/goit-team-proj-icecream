@@ -106,6 +106,7 @@
 
       &__text {
         margin-bottom: 32px;
+
       }
     }
   }
@@ -150,7 +151,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    .products {
+    .products { 
       
       &__title {
         font-size: 58px;
@@ -160,6 +161,7 @@
       &__title-part {
         font-size: 26px;
       }
+
 
       &__list {
         display: flex;
