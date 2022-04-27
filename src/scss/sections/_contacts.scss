@@ -1,5 +1,7 @@
 .contacts {
+
   background: linear-gradient(to top, #FFF5F6 75%, #FFFFFF 75%);
+
 
   &__item {
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -152,8 +154,8 @@
       max-width: 800px;
     }
 
-    &__item {
-      max-width: 230px;
+    &__item:not(:last-child) {
+      margin-right: 32px;
     }
 
     &__schedule-item,
@@ -175,7 +177,7 @@
 
 @media screen and (min-width: 1200px) {
   .contacts {
-    padding: 120px 0;
+    padding: 60px 0;
 
     &__list {
       display: flex;
@@ -183,8 +185,8 @@
       margin-bottom: 60px;
     }
 
-    &__item {
-      max-width: 395px;
+    &__item:not(:last-child) {
+      margin-right: 32px;
     }
 
     &__button:not(:last-child) {
