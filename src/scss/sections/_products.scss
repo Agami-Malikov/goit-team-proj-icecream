@@ -35,7 +35,7 @@
     &--green::before {
       position: absolute;
       display: block;
-      top: -30%;
+      top: -27%;
       right: 0;
     }
 
@@ -179,13 +179,13 @@
       }
 
       &__item {
-        padding: 265px 32px 40px;
+        padding: 165px 75px 60px;
         max-width: 395px;
 
         &--pink::before,
         &--sand::before,
         &--green::before {
-          top: -40%;
+          top: -47%;
         }
 
         &--pink::before {
