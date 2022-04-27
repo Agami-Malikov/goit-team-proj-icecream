@@ -260,7 +260,7 @@
 }
 
 .menu__btn--buy {
-  width: 160px;
+  padding: 12px 37px;
   border: none;
 }
 
@@ -307,16 +307,6 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-  }
-
-  .menu__btn--buy {
-    display: flex;
-
-    margin: 0 auto 20px;
-    width: 210px;
-    margin-bottom: 32px;
-
-    border: none;
   }
 
   &__item {
