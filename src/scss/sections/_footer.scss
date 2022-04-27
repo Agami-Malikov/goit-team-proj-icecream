@@ -1,29 +1,26 @@
+// __________FOOTER_________
 .footer {
   background-color: #fff5f6;
 
-  &__link {
-    color: $accent-color;
-  }
-
-  &__text {
+  &__text,
+  &__text--colored {
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__text {
     font-size: 18px;
     line-height: 1.17;
-    text-transform: uppercase;
     margin-bottom: 16px;
     color: $secondary-color;
   }
 
   &__text--colored {
-    font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
     font-size: 34px;
     line-height: 1.15;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
     margin-bottom: 40px;
     color: $accent-color;
   }
@@ -33,8 +30,6 @@
   }
 
   &__contact {
-    font-family: 'DM Sans';
-    font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 186%;
@@ -42,16 +37,18 @@
     color: #000000;
   }
 
+  &__link {
+    color: $accent-color;
+  }
+
   &__copyright {
-    border-top: 1px solid #e1e1e1;
     display: flex;
     justify-content: center;
-    background-color: #fff5f6;
     padding: 8px 0;
+    border-top: 1px solid #e1e1e1;
+    background-color: #fff5f6;
 
     &-text {
-      font-family: 'DM Sans';
-      font-style: normal;
       font-weight: 700;
       font-size: 14px;
       line-height: 152%;
@@ -60,6 +57,7 @@
   }
 }
 
+// __________SOCIAL_________
 .socials {
   display: flex;
   justify-content: flex-end;
@@ -73,8 +71,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 32px;
-    height: 32px;
+    width: 33px;
+    height: 33px;
     border-radius: 50%;
     background: #fea5bb;
 
@@ -90,10 +88,11 @@
   }
 }
 
+// __________MOBIL_________
 @media screen and (max-width: 767px) {
   .footer {
     &__text-block {
-      max-width: 232px;
+      max-width: 240px;
     }
 
     &__copyright {
@@ -110,77 +109,53 @@
   }
 }
 
+// __________TABLET_________
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .footer {
+
     &__text-block {
       max-width: 340px;
     }
 
     &__text {
-      font-family: 'Titan One';
-      font-style: normal;
-      font-weight: 400;
       font-size: 26px;
-      line-height: 30px;
+      line-height: 1.15;
       letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: $secondary-color;
     }
 
     &__text--colored {
-      font-family: 'Titan One';
-      font-style: normal;
-      font-weight: 400;
       font-size: 48px;
-      line-height: 55px;
+      line-height: 1.15;
       letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: $accent-color;
     }
 
     &__block {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 40px;
     }
   }
 }
 
+// __________DESCTOP_________
 @media screen and (min-width: 1201px) {
   .footer {
+
     &__text {
-      font-family: 'Titan One';
-      font-style: normal;
-      font-weight: 400;
       font-size: 30px;
-      line-height: 34px;
+      line-height: 1.13;
       letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: $secondary-color;
     }
 
     &__text--colored {
-      font-family: 'Titan One';
-      font-style: normal;
-      font-weight: 400;
       font-size: 58px;
-      line-height: 66px;
+      line-height: 1.14;
       letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: $accent-color;
-    }
-
-    &__buttons {
-      display: flex;
-      justify-content: center;
-      align-items: baseline;
-      margin-bottom: 120px;
     }
 
     &__block {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 60px;
+      margin-bottom: 20px;
     }
 
     &__contact-block {
