@@ -42,7 +42,6 @@
   .about-btn {
     width: 176px;
   }
-
 }
 
 // mobile
@@ -280,7 +279,6 @@
     z-index: 1;
   }
 
-
   .about__btn {
     position: relative;
 
@@ -289,8 +287,8 @@
     &::after {
       position: absolute;
       content: url(./../images/about/milk-desct.png);
-      bottom: -100px;
-      right: -100px;
+      bottom: -120px;
+      right: -115px;
     }
   }
 
@@ -347,8 +345,8 @@
       position: absolute;
       content: url(./../images/about/milk-desct.png);
       background-size: 300px;
-      bottom: -100px;
-      right: -100px;
+      bottom: -120px;
+      right: -115px;
     }
   }
 }
