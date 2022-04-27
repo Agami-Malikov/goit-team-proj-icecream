@@ -309,6 +309,12 @@
     cursor: pointer;
   }
 
+  .menu__btn-inside {
+    display: inline-block;
+    padding: 12px 45px;
+    margin-bottom: 20px;
+  }
+
   &__item {
     padding: 10px;
 
