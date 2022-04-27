@@ -270,6 +270,17 @@
   }
 }
 
+.menu__btn--buy {
+  width: 160px;
+  border: none;
+}
+
+.arrow-hero {
+  top: -5px;
+}
+// mobile menu
+
+
 .menu {
   position: fixed;
   top: 0;
@@ -310,7 +321,7 @@
   }
 
   .menu__btn--buy {
-    display: flex;
+    border: none;
     width: 210px;
     margin-bottom: 32px;
   }
@@ -441,11 +452,9 @@
       display: flex;
       align-items: center;
     }
-
-    &__btn--buy {
-      margin-left: 20px;
-      width: 160px;
-    }
+  }
+  .menu__btn--buy {
+    margin-left: 20px;
   }
 
   .hero {
@@ -519,10 +528,6 @@
   .header {
     &__button-burger {
       display: none;
-    }
-
-    &__btn--buy {
-      width: 159px;
     }
   }
 
