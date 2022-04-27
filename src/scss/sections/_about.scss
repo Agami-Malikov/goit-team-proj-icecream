@@ -46,6 +46,24 @@
 
 // mobile
 @media screen and (max-width: 767px) {
+  .about-bg {
+    position: relative;
+  }
+
+  .about__bg-wrapper {
+    position: absolute;
+    background-image: url(./../images/about/milk-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 60px;
+  }
+
+  .caption {
+    padding-top: 40px;
 
   .about-bg {
     padding: 40px 0;
@@ -72,7 +90,7 @@
   }
 
   .slogan {
-    position: relative;
+    // position: relative;
     width: calc(80% - 20px);
 
     &__title {
@@ -85,15 +103,16 @@
       font-size: 12px;
       line-height: 19px;
     }
-    &::after {
-      position: absolute;
-      content: url(./../images/about/milk-bg.png);
-      top: 75px;
-      left: -15px;
-    }
+    // &::after {
+    //   position: absolute;
+    //   content: url(./../images/about/milk-bg.png);
+    //   top: 75px;
+    //   left: -15px;
+    // }
   }
 
-  .about__btn {
+  .about-btn {
+    display: flex;
     margin-top: 20px;
   }
 
@@ -111,8 +130,6 @@
     }
 
     &__icon {
-      width: 50px;
-      height: 50px;
       margin-bottom: 10px;
     }
 
@@ -191,7 +208,7 @@
   }
 
   .about {
-    margin-top: 80px;
+    // padding: 80px 0;
 
     &__list {
       display: flex;
@@ -290,14 +307,13 @@
     &::after {
       position: absolute;
       content: url(./../images/about/milk-desct.png);
-
       bottom: -120px;
       right: -115px;
     }
   }
 
   .about {
-    padding: 120px 0px;
+    // padding: 80px 0;
 
     &__list {
       display: flex;
