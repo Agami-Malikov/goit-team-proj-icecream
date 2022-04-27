@@ -130,6 +130,7 @@
     position: relative;
     z-index: 2;
 
+    margin-bottom: 7px;
     max-width: 114px;
 
     font-family: 'DM Sans';
@@ -137,25 +138,6 @@
     line-height: 150%;
 
     color: #ffffff;
-  }
-
-  &__btn {
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-
-    border: none;
-    background-image: url(../images/header/desktop/button.png);
-    background-position: center;
-    background-size: cover;
-    cursor: pointer;
-
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background: url(../images/header/desktop/button-2x.png) center/cover no-repeat;
-    }
   }
 
   &__btn-img {
@@ -262,6 +244,13 @@
 }
 
 .hero {
+
+  &__picture {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
   &__girl {
     position: absolute;
 
@@ -271,7 +260,7 @@
 }
 
 .menu__btn--buy {
-  width: 160px;
+  padding: 12px 37px;
   border: none;
 }
 
@@ -318,13 +307,6 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-  }
-
-  .menu__btn--buy {
-    display: flex;
-    border: none;
-    width: 210px;
-    margin-bottom: 32px;
   }
 
   &__item {

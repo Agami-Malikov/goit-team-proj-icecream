@@ -86,8 +86,10 @@
   
 
   @media screen and (max-width: 768px) {
+
+    padding: 80px 0 40px;
+
     .products {
-      padding: 80px 0 40px;
 
       &__title {
         font-size: 34px;
@@ -112,8 +114,9 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1200px) {
+
+    padding: 40px 0 60px;
     .products {
-      padding: 40px 0 60px;
 
       &__list {
         display: flex;
@@ -125,13 +128,16 @@
 
       &__item {
         padding: 120px 32px 40px;
-        max-width: 224px;
+        
+        &:not(:last-child) {
+          margin-right: 16px;
+        }
 
         &--pink::before,
         &--sand::before,
         &--green::before {
           top: -40%;
-          right: -30px;
+          right: 0;
         }
       }
 
@@ -180,7 +186,10 @@
 
       &__item {
         padding: 265px 32px 40px;
-        max-width: 395px;
+        
+        &:not(:last-child) {
+          margin-right: 32px;
+        }
 
         &--pink::before,
         &--sand::before,

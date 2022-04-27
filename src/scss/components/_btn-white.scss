@@ -1,10 +1,7 @@
 .btn-white {
-  display: inline-flex;
-  justify-content: center;
-  text-align: center;
   font-size: 16px;
   font-weight: 700;
-  padding: 9px 0;
+  padding: 12px 0;
   border-radius: 25px;
   color: $accent-color;
   background-color: $main-white-color;
@@ -12,14 +9,9 @@
   &:hover {
     background-color: #ecebeb;
   }
-}
-
-.arrow {
-  position: relative;
 
   &::after {
-    position: absolute;
-    display: block;
+    display: inline-block;
     content: '';
     top: 10px;
     width: 6px;
@@ -28,5 +20,6 @@
     border-top: 3px solid $accent-color;
     border-left: 3px solid $accent-color;
     transform: rotate(135deg);
-  }
+  }  
 }
+

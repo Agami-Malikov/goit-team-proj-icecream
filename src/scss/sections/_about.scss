@@ -65,6 +65,10 @@
   .caption {
     padding-top: 40px;
 
+  .about-bg {
+    padding: 40px 0;
+  }
+  .caption {
     &__title {
       line-height: 21px;
     }
@@ -154,9 +158,10 @@
 
 // tablet
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+  .about-bg {
+    padding: 20px 0 40px;
+  }
   .caption {
-    padding-top: 20px;
-
     &__title {
       font-size: 26px;
       line-height: 30px;
