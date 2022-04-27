@@ -136,6 +136,10 @@
       display: flex;
       justify-content: space-between;
     }
+
+    &__contact {
+      font-size: 14px;
+    }
   }
 }
 
@@ -164,6 +168,10 @@
 
     &__contact-block {
       align-self: flex-end;
+    }
+
+    &__contact {
+      font-size: 16px;
     }
   }
 }
