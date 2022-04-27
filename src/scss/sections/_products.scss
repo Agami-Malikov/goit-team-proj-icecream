@@ -103,6 +103,10 @@
           margin-bottom: 150px;
         }
       }
+
+      &__text {
+        margin-bottom: 32px;
+      }
     }
   }
 
@@ -147,8 +151,7 @@
 
   @media screen and (min-width: 1200px) {
     .products {
-      padding: 60px 0;
-
+      
       &__title {
         font-size: 58px;
         margin-bottom: 230px;

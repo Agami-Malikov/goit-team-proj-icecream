@@ -28,3 +28,9 @@ body {
   max-width: 1230px;
   margin: 0 auto;
 }
+
+@media screen and (min-width: 1199px) {
+  .section {
+    padding: 60px 0;
+  }
+}
