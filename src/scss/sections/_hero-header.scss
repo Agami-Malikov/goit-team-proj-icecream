@@ -130,7 +130,7 @@
     position: relative;
     z-index: 2;
 
-    margin-bottom: 7px;
+    margin-bottom: 20px;
     max-width: 114px;
 
     font-family: 'DM Sans';
@@ -345,20 +345,6 @@
     &__nav {
       display: none;
     }
-
-    &__btn--made {
-      display: block;
-      width: 83px;
-      font-family: 'DM Sans';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 8px;
-      line-height: 10px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      color: #d41443;
-    }
   }
 
   .btn-white {
@@ -373,22 +359,7 @@
       z-index: 3;
     }
 
-    &__btn--product {
-      width: 63px;
-      font-family: 'DM Sans';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 8px;
-      line-height: 10px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      color: #ffffff;
-    }
-
     &__btn--made {
-      display: block;
-      width: 83px;
       font-family: 'DM Sans';
       font-style: normal;
       font-weight: 400;
@@ -398,6 +369,24 @@
       align-items: center;
       text-align: center;
       color: #d41443;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 12px 15px;
+    }
+
+    &__btn--product {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 10px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+      background: #d41443;
+      border-radius: 20px;
+      padding: 12px 15px;
     }
 
     &__ice-cream::after {
@@ -458,22 +447,7 @@
       font-size: 35px;
     }
 
-    &__btn--product {
-      width: 63px;
-      font-family: 'DM Sans';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 8px;
-      line-height: 10px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      color: #ffffff;
-    }
-
     &__btn--made {
-      display: block;
-      width: 83px;
       font-family: 'DM Sans';
       font-style: normal;
       font-weight: 400;
@@ -483,6 +457,24 @@
       align-items: center;
       text-align: center;
       color: #d41443;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 12px 15px;
+    }
+
+    &__btn--product {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 10px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+      background: #d41443;
+      border-radius: 20px;
+      padding: 12px 15px;
     }
 
     &__img {
@@ -529,34 +521,36 @@
       font-size: 60px;
     }
 
-    &__btn--product {
-      width: 107px;
-      font-family: 'DM Sans';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 18px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-
-      color: #ffffff;
-    }
-
     &__btn--made {
-      display: block;
-      width: 138px;
       font-family: 'DM Sans';
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
-      line-height: 18px;
+      line-height: 10px;
       display: flex;
       align-items: center;
       text-align: center;
-
       color: #d41443;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 12px 17px;
     }
+
+    &__btn--product {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 10px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+      background: #d41443;
+      border-radius: 20px;
+      padding: 12px 17px;
+    }
+
     &__item:not(:last-child) {
       margin-right: 12px;
     }
