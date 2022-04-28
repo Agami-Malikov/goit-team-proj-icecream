@@ -154,7 +154,7 @@
     .products {
       &__title {
         font-size: 58px;
-        margin-bottom: 230px;
+        margin-bottom: 270px;
       }
 
       &__title-part {
@@ -178,8 +178,6 @@
 
       &__item {
         padding: 165px 75px 60px;
-
-        padding: 265px 32px 40px;
 
         &:not(:last-child) {
           margin-right: 32px;
