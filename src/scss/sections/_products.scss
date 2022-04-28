@@ -83,14 +83,11 @@
   &__btn {
     margin: 0 auto;
   }
-  
 
   @media screen and (max-width: 768px) {
-
     padding: 80px 0 40px;
 
     .products {
-
       &__title {
         font-size: 34px;
         margin-bottom: 150px;
@@ -108,16 +105,13 @@
 
       &__text {
         margin-bottom: 32px;
-
       }
     }
   }
 
   @media screen and (min-width: 768px) and (max-width: 1200px) {
-
     padding: 40px 0 60px;
     .products {
-
       &__list {
         display: flex;
         justify-content: space-between;
@@ -128,7 +122,7 @@
 
       &__item {
         padding: 120px 32px 40px;
-        
+
         &:not(:last-child) {
           margin-right: 16px;
         }
@@ -157,8 +151,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    .products { 
-      
+    .products {
       &__title {
         font-size: 58px;
         margin-bottom: 230px;
@@ -167,7 +160,6 @@
       &__title-part {
         font-size: 26px;
       }
-
 
       &__list {
         display: flex;
@@ -185,15 +177,13 @@
       }
 
       &__item {
-
         padding: 165px 75px 60px;
- 
+
         padding: 265px 32px 40px;
-        
+
         &:not(:last-child) {
           margin-right: 32px;
         }
-
 
         &--pink::before,
         &--sand::before,
