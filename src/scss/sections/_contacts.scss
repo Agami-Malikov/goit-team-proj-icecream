@@ -1,13 +1,11 @@
 .contacts {
-
-  background: linear-gradient(to top, #FFF5F6 75%, #FFFFFF 75%);
-
+  background: linear-gradient(to top, #fff5f6 75%, #ffffff 75%);
 
   &__item {
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     padding: 40px 32px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 
   &__cafe,
@@ -199,3 +197,76 @@
     width: 198px;
   }
 }
+
+// modal wndw
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.backdrop {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(252, 74, 157, 0.2);
+  z-index: 20;
+}
+
+.modal {
+  position: relative;
+  padding: 40px;
+  background-color: #fff5f6;
+  border-radius: 30px;
+  z-index: 21;
+}
+
+.modal__close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  right: 20px;
+  border: 1px solid $accent-color;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal__close::after,
+.modal__close::before {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 2px;
+  background-color: $accent-color;
+  top: 50%;
+  left: 50%;
+}
+
+.modal__close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal__close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.modal__close:hover::before,
+.modal__close:hover::after {
+  background-color: $secondary-color;
+}
+
+.modal__header {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 33px;
+  color: $accent-color;
+  text-align: center;
+}
+

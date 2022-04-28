@@ -188,9 +188,10 @@
 
       <picture class="hero__picture">
         <source
+          <source
           srcset="
-            ./images/header/tablet/girl-tablet.webp   1x,
-            ./images/header/tablet/girl-tablet-2x.png 2x
+            ./images/header/tablet/girl-tablet.webp    1x,
+            ./images/header/tablet/girl-tablet-2x.webp 2x
           "
           type="image/webp"
           media="(min-width: 769px) and (max-width: 1199px)"
@@ -239,28 +240,18 @@
       <div class="modal__close" data-modal-close></div>
       <p class="modal__header">Make an order</p>
       <form action="" class="modal__form">
-        <label class="label" for="name">
-          <p class="modal__description">Name</p>
-          <div class="modal__input-svg">
-            <input class="modal__small-input" type="text" id="name" />
-            <svg class="modal__input-svg-icon">
-              <use href="../src/images/header/modal/cola.svg#icon-pacman"></use>
-            </svg>
-          </div>
+        <label class="label" for="name"
+          >Name
+          <input class="modal__small-input" type="text" id="name" />
         </label>
 
-        <label class="label" for="phone">
-          <p class="modal__description">Phone</p>
-          <div class="modal__input-svg">
-            <input class="modal__small-input" type="text" id="phone" required />
-            <svg class="modal__input-svg-icon">
-              <use href="../src/images/header/modal/cola.svg#icon-mobile"></use>
-            </svg>
-          </div>
+        <label class="label" for="phone"
+          >Phone
+          <input class="modal__small-input" type="text" id="phone" required />
         </label>
         <div class="modal__pics">
           <div class="modal__item">
-            <img src="../src/images/header/modal/ic1.png" width="100" alt="" /><input
+            <img src="../src/images/header/modal/ic1.webp" width="100" alt="" /><input
               class="modal__amount"
               type="number"
               min="0"
@@ -268,7 +259,7 @@
             />
           </div>
           <div class="modal__item">
-            <img src="../src/images/header/modal/ic2.png" width="100" alt="" /><input
+            <img src="../src/images/header/modal/ic2.webp" width="100" alt="" /><input
               class="modal__amount"
               type="number"
               min="0"
@@ -276,7 +267,7 @@
             />
           </div>
           <div class="modal__item">
-            <img src="../src/images/header/modal/ic3.png" width="100" alt="" /><input
+            <img src="../src/images/header/modal/ic3.webp" width="100" alt="" /><input
               class="modal__amount"
               type="number"
               min="0"
