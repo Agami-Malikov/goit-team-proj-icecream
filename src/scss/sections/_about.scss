@@ -234,6 +234,24 @@
 
 // desctop
 @media screen and (min-width: 1201px) {
+
+  .about-bg {
+    position: relative;
+  }
+
+  .about__bg-wrapper {
+    position: absolute;
+    background-image: url(./../images/about/milk-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 60px;
+  }
+
+  
   .caption {
     padding-top: 60px;
 
@@ -260,6 +278,8 @@
     align-items: center;
     justify-content: space-evenly;
   }
+
+  
 
   .about__img-cow {
     width: 500px;
