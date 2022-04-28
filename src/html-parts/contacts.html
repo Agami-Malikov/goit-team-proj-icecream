@@ -1,19 +1,11 @@
 <section class="contacts section" id="contact">
   <div class="container">
-    <h2 class="visually-hidden">
-      Contacts
-    </h2>
+    <h2 class="visually-hidden">Contacts</h2>
     <ul class="contacts__list">
       <li class="contacts__item">
-        <p class="contacts__cafe">
-          cafe
-        </p>
-        <h3 class="contacts__title">
-          Chicago
-        </h3>
-        <p class="contacts__text">
-          Fusce ut velit laoreet, tempus arcu molestie vulputate
-        </p>
+        <p class="contacts__cafe">cafe</p>
+        <h3 class="contacts__title">Chicago</h3>
+        <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
         <ul class="contacts__schedule-list">
           <li class="contacts__schedule-item">
             Monday - Friday
@@ -30,9 +22,7 @@
         </ul>
         <ul class="contacts__contact-list">
           <li class="contacts__contact-item">
-            <a class="contacts__contact-link" href="tel:610383766284">
-              +61(0) 383 766 284
-            </a>
+            <a class="contacts__contact-link" href="tel:610383766284"> +61(0) 383 766 284 </a>
           </li>
           <li class="contacts__contact-item">
             <a class="contacts__contact-link" href="mailto:noreply@envato.com">
@@ -42,15 +32,9 @@
         </ul>
       </li>
       <li class="contacts__item">
-        <p class="contacts__foodtruck">
-          foodtruck
-        </p>
-        <h3 class="contacts__title">
-          Los Angeles
-        </h3>
-        <p class="contacts__text">
-          Fusce ut velit laoreet, tempus arcu molestie vulputate
-        </p>
+        <p class="contacts__foodtruck">foodtruck</p>
+        <h3 class="contacts__title">Los Angeles</h3>
+        <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
         <ul class="contacts__schedule-list">
           <li class="contacts__schedule-item">
             Monday - Friday
@@ -67,9 +51,7 @@
         </ul>
         <ul class="contacts__contact-list">
           <li class="contacts__contact-item">
-            <a class="contacts__contact-link" href="tel:610383766284">
-              +61(0) 383 766 284
-            </a>
+            <a class="contacts__contact-link" href="tel:610383766284"> +61(0) 383 766 284 </a>
           </li>
           <li class="contacts__contact-item">
             <a class="contacts__contact-link" href="mailto:noreply@envato.com">
@@ -79,15 +61,9 @@
         </ul>
       </li>
       <li class="contacts__item">
-        <p class="contacts__cafe">
-          cafe
-        </p>
-        <h3 class="contacts__title">
-          New York
-        </h3>
-        <p class="contacts__text">
-          Fusce ut velit laoreet, tempus arcu molestie vulputate
-        </p>
+        <p class="contacts__cafe">cafe</p>
+        <h3 class="contacts__title">New York</h3>
+        <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
         <ul class="contacts__schedule-list">
           <li class="contacts__schedule-item">
             Monday - Friday
@@ -104,9 +80,7 @@
         </ul>
         <ul class="contacts__contact-list">
           <li class="contacts__contact-item">
-            <a class="contacts__contact-link" href="tel:610383766284">
-              +61(0) 383 766 284
-            </a>
+            <a class="contacts__contact-link" href="tel:610383766284"> +61(0) 383 766 284 </a>
           </li>
           <li class="contacts__contact-item">
             <a class="contacts__contact-link" href="mailto:noreply@envato.com">
@@ -118,15 +92,37 @@
     </ul>
     <ul class="contacts__buttons">
       <li class="contacts__button">
-        <a class="btn-red btn-red--size" href="#">Our Locations
+        <!-- btn and modal for google -->
+
+        <button class="btn-red btn-red--size" href="#" data-map-open>
+          Our Locations
           <span class="arrow-red"></span>
-        </a>
+        </button>
       </li>
       <li class="contacts__button">
-        <a class="btn-white btn-white--size" href="#">Franchise
-          <span class="arrow"></span>
+        <a type="button" class="btn-white btn-white--size">
+          Franchise
+          <span class="arrow arrow-hero"></span>
         </a>
       </li>
     </ul>
+
+    <!-- modal wndw -->
+
+    <div class="backdrop is-hidden" data-map>
+      <div class="modal">
+        <div class="modal__close" data-map-close></div>
+        <p class="modal__header">Our Locatiot</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.478589916343!2d12.480331250997992!3d41.90406937911814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6054be16a5f5%3A0xb9f321df656d8ded!2sIcecream%20Shop%20La%20Strega%20Nocciola!5e0!3m2!1sru!2sua!4v1651128950042!5m2!1sru!2sua"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
   </div>
 </section>
